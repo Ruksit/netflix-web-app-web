@@ -64,7 +64,7 @@ const Navbar = () => {
             src="https://github.com/shadcn.png"
             className="w-5 h-5 rounded-md"
           />
-          <AvatarFallback>CN</AvatarFallback>
+          <AvatarFallback>👤</AvatarFallback>
         </Avatar>
       </div>
     </div>
