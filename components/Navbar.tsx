@@ -1,5 +1,5 @@
 "use client";
-
+import NetflixLogoDesktop from "../public/netflix-logo-desktop.svg"
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <Link href="/" className="w-32">
           <Image
-            src="/netflix-logo-desktop.png"
+            src={NetflixLogoDesktop}
             alt="Netflix Logo"
             width={150}
             height={50}
