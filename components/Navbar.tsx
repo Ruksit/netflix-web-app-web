@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import NetflixLogoDesktop from "../public/netflix-logo-desktop.png";
 import { usePathname } from "next/navigation";
 import { Bell, Search } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
@@ -28,7 +27,13 @@ const Navbar = () => {
     <div className="w-full max-w-7xl mx-auto items-center justify-between px-5 sm:px-6 py-5 lg:px-8 flex">
       <div className="flex items-center">
         <Link href="/" className="w-32">
-          <Image src={NetflixLogoDesktop} alt="Netflix Logo" priority />
+          <Image
+            src="/netflix-logo-desktop.png"
+            alt="Netflix Logo"
+            width={150}
+            height={50}
+            priority
+          />
         </Link>
         <ul className="lg:flex gap-x-4 ml-14 hidden">
           {links.map((link, idx) => (
